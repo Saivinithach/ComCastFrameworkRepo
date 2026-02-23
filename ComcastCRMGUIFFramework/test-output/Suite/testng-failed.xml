@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="TestRunner-Chrome(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrgTest_WithConfigData">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createOrgWithPhnNum"/>
+          <include name="configBM"/>
+          <include name="configAm"/>
+          <include name="createOrgTest"/>
+          <include name="createOrgWithIndustry"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtest.CreateOrgTest_WithConfigData -->
+      <class name="com.comcast.crm.contacttest.CreateContactTest_WithConfigDat">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="createContactWithSupportDateTest"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="configBM"/>
+          <include name="configAm"/>
+          <include name="createContactTest"/>
+          <include name="createContactWithOrgTest"/>
+        </methods>
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest_WithConfigDat -->
+    </classes>
+  </test> <!-- TestRunner-Chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner-FireFox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrgTest_WithConfigData">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createOrgWithPhnNum"/>
+          <include name="configBM"/>
+          <include name="configAm"/>
+          <include name="createOrgTest"/>
+          <include name="createOrgWithIndustry"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtest.CreateOrgTest_WithConfigData -->
+      <class name="com.comcast.crm.contacttest.CreateContactTest_WithConfigDat">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createContactWithSupportDateTest"/>
+          <include name="configBM"/>
+          <include name="configAm"/>
+          <include name="createContactTest"/>
+          <include name="createContactWithOrgTest"/>
+        </methods>
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest_WithConfigDat -->
+    </classes>
+  </test> <!-- TestRunner-FireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
