@@ -15,6 +15,9 @@ public class HomePage
 		PageFactory.initElements(driver,this);
 	}
 	
+	@FindBy(linkText="Products")
+	private WebElement proLink;
+	
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
 	
@@ -35,6 +38,9 @@ public class HomePage
 	
 	public WebElement getOrgLink() {
 		return orgLink;
+	}
+	public WebElement getProLink() {
+		return proLink;
 	}
 	public WebElement getContactLink() {
 		return contactLink;
