@@ -8,6 +8,6 @@ public class Products
 	@FindBy(xpath="//input[@alt='Create Product...']")
 	private WebElement createProductImg;
 	
-	@FindBy(name="search")
-	private WebElement ele3;
+	@FindBy(xpath="//input[@alt='Create Contact...']")
+	private WebElement createContactImg;
 }
